@@ -118,7 +118,40 @@ for (names of ninjaTurtles) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies[8])
+favMovies.sort()
+console.log(favMovies)
 
+favMovies.pop()
+favMovies.push("Guardians of the Galaxy")
+console.log(favMovies)
+
+favMovies.reverse()
+console.log(favMovies)
+
+console.log(favMovies.shift()) // this removes ** edit ** this puts it into a negative index (-1) ** the fist index and logs it - its like pop but the beginning and then you have it there to log
+
+favMovies.unshift("Dazed and Confused") // this is like push but in the beginning of the array
+console.log(favMovies)
+
+console.log(favMovies.indexOf("Django Unchained")) // 15
+favMovies.splice(15, 1, "Avatar")
+console.log(favMovies)
+
+console.log(favMovies.length / 2) // 9.5, lets use 9 as the middle index
+
+const newFavMoviese = favMovies.slice(9) // creating a new array via slice function. naming it newFavMovies
+console.log(newFavMoviese)
+
+console.log(favMovies.indexOf("Guardians of the Galaxy")) // my Fast and Furious was never deleted.. trying for Guardians of the Galaxy, gave me -1
+console.log(favMovies)
+favMovies.pop()
+console.log(favMovies)
+
+console.log(favMovies.indexOf("Black Panther")) // -1 to confirm above
+
+//thought question: its like changing a couch inside of a house! still a constant array, just things inside it are changing
 
 ////////////////////////////////
 // Where is Waldo
