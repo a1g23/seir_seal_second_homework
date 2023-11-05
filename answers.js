@@ -178,7 +178,36 @@ console.log(whereIsWaldo[2][1][1])
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+// write a simple loop that logs 20 times
+for (i = 0; i < 20; i++) {
+    console.log(i)
+}
 
+// write that loop but have it log "Love me, pet me! HSSSSSS!"
+for (i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSS!")
+}
+
+// create an array of the randome options
+const catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+console.log(catTalk)
+
+//randomize math function, 0-2
+const randomTalk = Math.floor(Math.random() * 2.999)
+console.log(randomTalk)
+
+// check a random cat talk log ** had to edit the number about to 2.9999
+console.log(catTalk[randomTalk])
+
+// back to the loop, on every even number, random cat talk
+for (i = 1; i < 21; i++) {
+    if(i % 2 === 0) {
+        const randomTalk = Math.floor(Math.random() * 2.999)
+        console.log(catTalk[randomTalk])
+    } else {
+    console.log("Love me, pet me! HSSSS!")
+}
+}
 
 ////////////////////////////////
 //  Find the Median
