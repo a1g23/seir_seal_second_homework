@@ -156,6 +156,23 @@ console.log(favMovies.indexOf("Black Panther")) // -1 to confirm above
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [                              // make a table
+    [ 'Timmy', 'Frank' ],
+    "Eggbert",
+    [ 'Lucinda', 'Jacc', 'Neff', 'Snoop' ],
+    [ 'Petunia', [ 'Baked Goods', 'Waldo' ] ]
+  ]
+whereIsWaldo.splice(1,1)  // removing "Eggbert" via the splice method. Eggbert is index 1 and we're deleting 1 index
+console.log(whereIsWaldo)
+
+// try to console.log "Neff"
+console.log(whereIsWaldo[1][2])
+// change to No One
+whereIsWaldo[1][2] = "No One"
+console.log(whereIsWaldo)
+
+// access and console Waldo
+console.log(whereIsWaldo[2][1][1])
 
 
 ////////////////////////////////
