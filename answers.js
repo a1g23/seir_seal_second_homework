@@ -212,5 +212,21 @@ for (i = 1; i < 21; i++) {
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+// the median would be the half way point of the length of the index AFTER sorted
+// first I will sort the array
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+nums.sort()
+console.log(nums)
+
+// what is the index we want to log?
+console.log(nums.length / 2)
+
+// floor function to round down
+console.log(Math.floor(nums.length / 2))
+
+// now log that actual index value
+console.log(nums[(Math.floor((nums.length) / 2))])
+
 
 
